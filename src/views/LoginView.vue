@@ -255,7 +255,7 @@ async function handleLogin() {
 
                 <p class="text-center text-sm leading-7 text-slate-500">
                     ¿Tu empresa aún no tiene una cuenta?
-                    <RouterLink to="/registro" class="ml-1 inline-flex items-center gap-1 rounded font-bold text-blue-600 transition hover:text-blue-800 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                    <RouterLink to="/register" class="ml-1 inline-flex items-center gap-1 rounded font-bold text-blue-600 transition hover:text-blue-800 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
                         Regístrate
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
                     </RouterLink>

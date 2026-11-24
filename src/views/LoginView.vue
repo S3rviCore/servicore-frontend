@@ -42,12 +42,15 @@ async function handleLogin() {
             lastName: data.lastName,
             email: data.email,
             role: data.role,
+            companyId: data.companyId
         }));
 
+        /*
         if (data.mustChangePassword) {
             errorMessage.value = 'Debes cambiar tu contraseña antes de continuar.';
             return;
         }
+        */
 
         await router.push('/');
     } catch (error) {

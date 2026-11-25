@@ -15,6 +15,8 @@ const router = createRouter({
             meta: { requiresAuth: true },
             children: [
                 { path: '', name: 'home', component: () => import('@/views/HomeView.vue'), meta: { title: 'Inicio' } },
+                { path: 'users', name: 'users', component: () => import('@/views/UsersView.vue'), meta: { title: 'Usuarios', roles: ['Administrador'] } },
+                { path: 'roles', name: 'roles', component: () =>  import('@/views/RoleView.vue'), meta: { title: 'Roles', roles: ['Administrador'] } }
             ],
         },
         { path: '/:pathMatch(.*)*', redirect: '/' },

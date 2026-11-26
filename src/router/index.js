@@ -16,7 +16,8 @@ const router = createRouter({
             children: [
                 { path: '', name: 'home', component: () => import('@/views/HomeView.vue'), meta: { title: 'Inicio' } },
                 { path: 'users', name: 'users', component: () => import('@/views/UsersView.vue'), meta: { title: 'Usuarios', roles: ['Administrador'] } },
-                { path: 'roles', name: 'roles', component: () =>  import('@/views/RoleView.vue'), meta: { title: 'Roles', roles: ['Administrador'] } }
+                { path: 'roles', name: 'roles', component: () =>  import('@/views/RoleView.vue'), meta: { title: 'Roles', roles: ['Administrador'] } },
+                { path: 'company', name: 'company', component: () => import('@/views/CompanyView.vue'), meta: { title: 'Compania', roles: ['Administrador'] } }
             ],
         },
         { path: '/:pathMatch(.*)*', redirect: '/' },

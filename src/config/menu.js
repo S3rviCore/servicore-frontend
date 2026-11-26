@@ -24,6 +24,7 @@ export const menu = [
         title: 'Operación',
         items: [
             { label: 'Técnicos', to: '/technicians', icon: icons.technicians, roles: ['Administrador'] },
+            { label: 'Especialidades', to: '/specialities', icon: icons.technicians, roles: ['Administrador'] },
             { label: 'Herramientas', to: '/tools', icon: icons.tools, roles: ['Administrador'] },
             { label: 'Materiales', to: '/materials', icon: icons.materials, roles: ['Administrador'] },
             { label: 'Pagos', to: '/payments', icon: icons.payments, roles: ['Administrador'] },

@@ -19,7 +19,8 @@ const router = createRouter({
                 { path: 'roles', name: 'roles', component: () =>  import('@/views/RoleView.vue'), meta: { title: 'Roles', roles: ['Administrador'] } },
                 { path: 'company', name: 'company', component: () => import('@/views/CompanyView.vue'), meta: { title: 'Compania', roles: ['Administrador'] } },
                 { path: 'specialities', name: 'speciality', component: () => import('@/views/SpecialityView.vue'), meta: { title: 'Especialidades', roles: ['Administrador'] } },
-                { path: 'technicians', name: 'technician', component: () => import('@/views/TechnicianView.vue'), meta: { title: 'Tecnicos', roles: ['Administrador'] } }
+                { path: 'technicians', name: 'technician', component: () => import('@/views/TechnicianView.vue'), meta: { title: 'Tecnicos', roles: ['Administrador'] } },
+                { path: 'tools', name: 'tools', component: () => import('@/views/ToolsView.vue'), meta: { title: 'Herramientas', roles: ['Administrador'] } }
             ],
         },
         { path: '/:pathMatch(.*)*', redirect: '/' },

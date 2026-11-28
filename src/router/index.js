@@ -20,7 +20,8 @@ const router = createRouter({
                 { path: 'company', name: 'company', component: () => import('@/views/CompanyView.vue'), meta: { title: 'Compania', roles: ['Administrador'] } },
                 { path: 'specialities', name: 'speciality', component: () => import('@/views/SpecialityView.vue'), meta: { title: 'Especialidades', roles: ['Administrador'] } },
                 { path: 'technicians', name: 'technician', component: () => import('@/views/TechnicianView.vue'), meta: { title: 'Tecnicos', roles: ['Administrador'] } },
-                { path: 'tools', name: 'tools', component: () => import('@/views/ToolsView.vue'), meta: { title: 'Herramientas', roles: ['Administrador'] } }
+                { path: 'tools', name: 'tools', component: () => import('@/views/ToolsView.vue'), meta: { title: 'Herramientas', roles: ['Administrador'] } },
+                { path: 'materials', name: 'materials', component: () => import('@/views/MaterialsView.vue'), meta: { title: 'Materiales', roles: ['Administrador'] } }
             ],
         },
         { path: '/:pathMatch(.*)*', redirect: '/' },
